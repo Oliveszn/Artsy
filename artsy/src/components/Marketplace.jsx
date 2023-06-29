@@ -1,21 +1,24 @@
-import { useState } from "react";
-import Modal from "./Modal";
+import { useContext, useState } from "react";
+import { PRODUCTS } from "../products";
+import Product from "./Product";
 
-const Marketplace = ({ product, onToggle }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Marketplace = ({}) => {
+  const [search, setSearch] = useState("");
+
   return (
     <>
-      <header className="mx-auto container mb-10 flex items-center">
+      <header className="mx-auto container mb-10 flex items-center w-full">
         <div className="mr-20">
           <input
+            onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="Search"
-            className="w-32 h-8 px-2 bg-gray-200 rounded-md sam font-Sat font-normal md:text-2xl"
+            className="w-full md:w-32 h-8 px-2 bg-gray-200 rounded-md border-none font-Sat font-normal md:text-2xl"
             id="searchbar"
           />
         </div>
 
-        <div className="bg-priColor shadow-md rounded-xl py-1 px-5 flex items-center justify-between w-full">
+        <div className="bg-priColor shadow-md rounded-xl py-1 px-5 flex items-center justify-between w-full ">
           <div>
             <h1 className="text-secColor text-base md:text-2xl font-normal font-Sat">
               See 1-6 of 16 results
@@ -26,7 +29,7 @@ const Marketplace = ({ product, onToggle }) => {
             <button
               id="dropdownBgHoverButton"
               data-dropdown-toggle="dropdownBgHover"
-              className="text-secColor bg-white focus:outline-none font-Sat font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center shadow"
+              className="text-secColor bg-white focus:outline-none font-Sat font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center shadow hidden md:block"
               type="button"
             >
               Sort by
@@ -114,7 +117,7 @@ const Marketplace = ({ product, onToggle }) => {
         <section className="menu-side hidden md:block" id="wagwan">
           <div className="mx-auto container flex flex-col items-start justify-center px-6">
             <h1 className="md:text-3xl text-lg  font-normal md:font-medium font-Sat">
-              Filter
+              Filter1
             </h1>
 
             <form action="">
@@ -198,32 +201,16 @@ const Marketplace = ({ product, onToggle }) => {
           </div>
         </section>
 
-        <section className="hello gap-y-10 gap-x-16 z-10" id="names">
-          {product.map((pro) => (
-            <div
-              key={pro.id}
-              onClick={() => setIsOpen(true)}
-              className="card__holder flex flex-col justify-center items-center py-4"
-            >
-              <div className="">
-                <div className="mb-4">
-                  <img src={pro.image} alt="" className="" />
-                </div>
-                <div className="flex flex-row md:block">
-                  <h1 className="piece">{pro.title}</h1>
-                  <p className="piece__price">{pro.price}</p>
-                </div>
-              </div>
-            </div>
+        <section className="hello gap-y-10 gap-x-16 z-10 px-8 md:px-0">
+          {PRODUCTS.filter((item) => {
+            return search.toLowerCase() === ""
+              ? item
+              : item.title.toLowerCase().includes(search);
+          }).map((product) => (
+            <Product data={product} key={product.id} />
           ))}
         </section>
       </main>
-      <div className="relative z-10">
-        <button onClick={() => setIsOpen(true)}>OPen</button>
-        <Modal open={isOpen} onclose={() => setIsOpen(false)}>
-          Fancy
-        </Modal>
-      </div>
     </>
   );
 };

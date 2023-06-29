@@ -14,7 +14,7 @@ const Auctions = () => {
             Here’s an overview of products actively on auction, explore!
           </h2>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <div className="relative">
             <img src={rec24} alt="" className="rubb" />
             <div className="image__time">

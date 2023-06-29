@@ -208,8 +208,8 @@ const Drop = () => {
         </div>
       </section>
 
-      <div class="hidden md:flex items-center justify-center my-20">
-        <button class="text-textColorAlt border-solid border border-current rounded-lg py-4 px-10 text-lg font-medium">
+      <div className="hidden md:flex items-center justify-center my-20">
+        <button className="text-textColorAlt border-solid border border-current rounded-lg py-4 px-10 text-lg font-medium">
           SEE MORE
         </button>
       </div>

@@ -11,7 +11,7 @@ import img91 from "../images/Rectangle 91.png";
 import vec1 from "../images/Vector1.png";
 import foot1 from "../images/Vector-footer1.png";
 import foot0 from "../images/Vector-footer.png";
-
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Features = () => {
@@ -63,11 +63,11 @@ const Features = () => {
 
                 <div className="relative flex items-center">
                   <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1" />
-                    <img src={img15} alt="" className="-translate-x-6" />
-                    <img src={img16} alt="" className="-translate-x-12" />
-                    <img src={img17} alt="" className="-translate-x-20" />
-                    <img src={img18} alt="" className="-translate-x-24" />
+                    <img src={img14} alt="" className="ellipse__1 w-10" />
+                    <img src={img15} alt="" className="-translate-x-6 w-10" />
+                    <img src={img16} alt="" className="-translate-x-12 w-10" />
+                    <img src={img17} alt="" className="-translate-x-20 w-10" />
+                    <img src={img18} alt="" className="-translate-x-24 w-10" />
                   </div>
 
                   <div className="flex items-center relative left-44">
@@ -119,11 +119,11 @@ const Features = () => {
 
                 <div className="relative flex items-center">
                   <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1" />
-                    <img src={img15} alt="" className="-translate-x-6" />
-                    <img src={img16} alt="" className="-translate-x-12" />
-                    <img src={img17} alt="" className="-translate-x-20" />
-                    <img src={img18} alt="" className="-translate-x-24" />
+                    <img src={img14} alt="" className="ellipse__1 w-10" />
+                    <img src={img15} alt="" className="-translate-x-6 w-10" />
+                    <img src={img16} alt="" className="-translate-x-12 w-10" />
+                    <img src={img17} alt="" className="-translate-x-20 w-10" />
+                    <img src={img18} alt="" className="-translate-x-24 w-10" />
                   </div>
 
                   <div className="flex items-center relative left-44">
@@ -175,11 +175,11 @@ const Features = () => {
 
                 <div className="relative flex items-center">
                   <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1" />
-                    <img src={img15} alt="" className="-translate-x-6" />
-                    <img src={img16} alt="" className="-translate-x-12" />
-                    <img src={img17} alt="" className="-translate-x-20" />
-                    <img src={img18} alt="" className="-translate-x-24" />
+                    <img src={img14} alt="" className="ellipse__1 w-10" />
+                    <img src={img15} alt="" className="-translate-x-6 w-10" />
+                    <img src={img16} alt="" className="-translate-x-12 w-10" />
+                    <img src={img17} alt="" className="-translate-x-20 w-10" />
+                    <img src={img18} alt="" className="-translate-x-24 w-10" />
                   </div>
 
                   <div className="flex items-center relative left-44">
@@ -251,18 +251,24 @@ const Features = () => {
               <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Sat">
                 Explore Marketplace
               </h1>
-              <a href="marketplace.html">
+              <Link
+                to="/marketplace"
+                className="font-Sat font-medium md:text-2xl text-center"
+              >
                 <img src={vec1} alt="" />
-              </a>
+              </Link>
             </div>
             <hr />
             <div className="flex justify-around mt-10 items-center">
               <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Sat">
                 See auctions
               </h1>
-              <a href="auctions.html">
+              <Link
+                to="/auctions"
+                className="font-Sat font-medium md:text-2xl text-center"
+              >
                 <img src={vec1} alt="" />
-              </a>
+              </Link>
             </div>
             <hr />
           </div>

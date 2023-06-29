@@ -30,16 +30,17 @@ const Navbar = () => {
           <a href="">
             <ion-icon name="search-outline"></ion-icon>
           </a>
-          <a href="cart.html" className="cart-btn">
+
+          <Link to="/cart" className="cart-btn">
             <ion-icon name="cart-outline"></ion-icon>
-          </a>
+          </Link>
           <a href="">
             <ion-icon name="notifications-outline"></ion-icon>
           </a>
         </div>
 
         <div
-          className={`items-center justify-between absolute md:static w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in ${
+          className={`items-center justify-between absolute md:static w-full md:flex md:w-auto md:order-1 transition-all duration-500 ease-in bg-white md:bg-priColor ${
             open ? "top-20" : "top-[-490px]"
           }`}
           id="targetEl"

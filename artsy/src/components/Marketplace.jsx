@@ -117,7 +117,7 @@ const Marketplace = ({}) => {
         <section className="menu-side hidden md:block" id="wagwan">
           <div className="mx-auto container flex flex-col items-start justify-center px-6">
             <h1 className="md:text-3xl text-lg  font-normal md:font-medium font-Sat">
-              Filter1
+              Filter
             </h1>
 
             <form action="">

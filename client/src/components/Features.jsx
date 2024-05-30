@@ -13,6 +13,7 @@ import foot1 from "../images/Vector-footer1.png";
 import foot0 from "../images/Vector-footer.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { featuredproducts } from "../datafiles/featuredProducts";
 
 const Features = () => {
   const location = useLocation();
@@ -20,180 +21,85 @@ const Features = () => {
   return (
     <>
       {location.pathname === "/" && (
-        <section className="section container mt-24 mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold md:font-medium leading-10 mb-10 font-Sat">
+        <section className="container mt-24 mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold md:font-medium leading-10 mb-10 font-Clash">
             Featured Products
           </h1>
           <hr className="hidden md:block" />
           <br className="hidden md:block" />
           <div className="feature__container px-1">
-            <div className="feature__wrapper flex flex-col gap-x-7 md:flex-row">
-              <div className="feature__img--holder">
-                <img
-                  src={img9}
-                  className="feature__img hover:cursor-pointer"
-                  alt=""
-                />
-                <div className="image__overlay image__overlay--blur hidden md:flex">
-                  <div className="flex items-center">
-                    <h1 className="text-3xl font-medium font-Sat">
-                      View Products
-                    </h1>
-                    <div className="circle relative bg-priColor">
-                      <img src={vector1} alt="" className="arrow absolute" />
+            {featuredproducts.map((item, index) => (
+              <div
+                className={`feature__wrapper flex flex-col gap-x-7 md:flex-row mt-10 ${
+                  index % 2 === 1 ? "md:flex-row-reverse" : ""
+                }`}
+                key={item.id}
+              >
+                <div className="feature__img--holder">
+                  <img
+                    src={item.image}
+                    className="feature__img hover:cursor-pointer"
+                    alt=""
+                  />
+                  <div className="image__overlay image__overlay--blur hidden md:flex">
+                    <div className="flex items-center">
+                      <h1 className="text-3xl font-medium font-Clash">
+                        View Products
+                      </h1>
+                      <div className="circle relative bg-priColor">
+                        <img src={vector1} alt="" className="arrow absolute" />
+                      </div>
                     </div>
                   </div>
+                  <div className="absolute w-full h-full top-0 left-0 flex-col items-center justify-center flex md:hidden">
+                    <h1 className="feature__title font-bold text-4xl text-priColor mb-3 font-Clash">
+                      {item.title}
+                    </h1>
+                  </div>
                 </div>
-                <div className="absolute w-full h-full top-0 left-0 flex-col items-center justify-center flex md:hidden">
-                  <h1 className="feature__title font-bold text-4xl text-priColor mb-3 font-Clash">
-                    The Boolean Egyptian
+
+                <div className="md:w-1/2">
+                  <h1 className="feature__title font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
+                    {item.title}
                   </h1>
-                </div>
-              </div>
+                  <p className="feature__subtitle w-11/12 font-normal text-base md:text-2xl text-textColorAlt mb-16 font-Clash">
+                    {item.subtitle}
+                  </p>
 
-              <div className="md:w-1/2">
-                <h1 className="feature__title font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
-                  The Boolean Egyptian
-                </h1>
-                <p className="feature__subtitle w-11/12 font-normal text-base md:text-2xl text-textColorAlt mb-16 font-Sat">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magna
-                  fringilla urna, porttitor rhoncus dolor pur
-                </p>
+                  <div className="relative flex items-center">
+                    <div className="ellipse__holder absolute flex items-center">
+                      <img src={img14} alt="" className="ellipse__1 w-10" />
+                      <img src={img15} alt="" className="-translate-x-6 w-10" />
+                      <img
+                        src={img16}
+                        alt=""
+                        className="-translate-x-12 w-10"
+                      />
+                      <img
+                        src={img17}
+                        alt=""
+                        className="-translate-x-20 w-10"
+                      />
+                      <img
+                        src={img18}
+                        alt=""
+                        className="-translate-x-24 w-10"
+                      />
+                    </div>
 
-                <div className="relative flex items-center">
-                  <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1 w-10" />
-                    <img src={img15} alt="" className="-translate-x-6 w-10" />
-                    <img src={img16} alt="" className="-translate-x-12 w-10" />
-                    <img src={img17} alt="" className="-translate-x-20 w-10" />
-                    <img src={img18} alt="" className="-translate-x-24 w-10" />
-                  </div>
+                    <div className="flex items-center relative left-44">
+                      <h1 className="text-textColorAlt text-base md:text-xl font-medium md:font-normal mr-10 font-Clash">
+                        64 Major Creators
+                      </h1>
 
-                  <div className="flex items-center relative left-44">
-                    <h1 className="text-textColorAlt text-base md:text-xl font-medium md:font-normal mr-10 font-Clash">
-                      64 Major Creators
-                    </h1>
-
-                    <div className="circle hidden md:block relative hover:cursor-pointer">
-                      <img src={vector1} alt="" className="arrow absolute" />
+                      <div className="circle hidden md:block relative hover:cursor-pointer">
+                        <img src={vector1} alt="" className="arrow absolute" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="feature__wrapper block md:flex md:flex-row-reverse gap-x-7 mt-10">
-              <div className="feature__img--holder">
-                <img
-                  src={img10}
-                  className="feature__img hover:cursor-pointer"
-                  alt=""
-                />
-                <div className="image__overlay image__overlay--blur hidden md:flex">
-                  <div className="flex items-center">
-                    <h1 className="text-3xl font-medium font-Sat">
-                      View Products
-                    </h1>
-                    <div className="circle relative bg-priColor">
-                      <img src={vector1} alt="" className="arrow absolute" />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute w-full h-full top-0 left-0 flex-col items-center justify-center flex md:hidden">
-                  <h1 className="feature__title font-bold text-4xl text-priColor mb-3 font-Clash">
-                    Are we there yet?
-                  </h1>
-                </div>
-              </div>
-
-              <div className="md:w-1/2">
-                <h1 className="feature__title font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
-                  Are we there yet?
-                </h1>
-                <p className="feature__subtitle w-11/12 font-normal text-base md:text-2xl text-textColorAlt mb-16 font-Sat">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magna
-                  fringilla urna, porttitor rhoncus dolor pur
-                </p>
-
-                <div className="relative flex items-center">
-                  <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1 w-10" />
-                    <img src={img15} alt="" className="-translate-x-6 w-10" />
-                    <img src={img16} alt="" className="-translate-x-12 w-10" />
-                    <img src={img17} alt="" className="-translate-x-20 w-10" />
-                    <img src={img18} alt="" className="-translate-x-24 w-10" />
-                  </div>
-
-                  <div className="flex items-center relative left-44">
-                    <h1 className="text-textColorAlt text-base md:text-xl font-medium md:font-normal mr-10 font-Clash">
-                      64 Major Creators
-                    </h1>
-
-                    <div className="circle hidden md:block relative hover:cursor-pointer">
-                      <img src={vector1} alt="" className="arrow absolute" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="feature__wrapper flex flex-col gap-x-7 md:flex-row mt-10">
-              <div className="feature__img--holder">
-                <img
-                  src={img11}
-                  className="feature__img hover:cursor-pointer"
-                  alt=""
-                />
-                <div className="image__overlay image__overlay--blur hidden md:flex">
-                  <div className="flex items-center">
-                    <h1 className="text-3xl font-medium font-Sat">
-                      View Products
-                    </h1>
-                    <div className="circle relative bg-priColor">
-                      <img src={vector1} alt="" className="arrow absolute" />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute w-full h-full top-0 left-0 flex-col items-center justify-center flex md:hidden">
-                  <h1 className="feature__title font-bold text-4xl text-priColor mb-3 font-Clash">
-                    Oloibiri 1997
-                  </h1>
-                </div>
-              </div>
-
-              <div className="md:w-1/2">
-                <h1 className="feature__title font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
-                  Oloibiri 1997
-                </h1>
-                <p className="feature__subtitle w-11/12 font-normal text-base md:text-2xl text-textColorAlt mb-16 font-Sat">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                  aliquam, purus sit amet luctus venenatis, lectus magna
-                  fringilla urna, porttitor rhoncus dolor pur
-                </p>
-
-                <div className="relative flex items-center">
-                  <div className="ellipse__holder absolute flex items-center">
-                    <img src={img14} alt="" className="ellipse__1 w-10" />
-                    <img src={img15} alt="" className="-translate-x-6 w-10" />
-                    <img src={img16} alt="" className="-translate-x-12 w-10" />
-                    <img src={img17} alt="" className="-translate-x-20 w-10" />
-                    <img src={img18} alt="" className="-translate-x-24 w-10" />
-                  </div>
-
-                  <div className="flex items-center relative left-44">
-                    <h1 className="text-textColorAlt text-base md:text-xl font-medium md:font-normal mr-10 font-Sat">
-                      64 Major Creators
-                    </h1>
-
-                    <div className="circle hidden md:block relative hover:cursor-pointer">
-                      <img src={vector1} alt="" className="arrow absolute" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       )}
@@ -201,20 +107,20 @@ const Features = () => {
       {location.pathname === "/" && (
         <section className="auct mt-20">
           <div className="container mx-auto py-10">
-            <h1 className="md:font-medium md:text-4xl text-priColor mb-9 hidden md:block font-Sat">
+            <h1 className="md:font-medium md:text-4xl text-priColor mb-9 hidden md:block font-Clash">
               See Upcoming Auctions and Exhibitions
             </h1>
             <div className="relative box-border">
               <img src={img91} alt="" className="" />
               <div className="absolute top-8 md:top-40 left-24">
-                <h1 className="text-priColor text-xl md:text-3xl font-normal md:font-normal mb-3 font-Sat">
+                <h1 className="text-priColor text-xl md:text-3xl font-normal md:font-normal mb-3 font-Clash">
                   MONALISA REDEFINED IN STYLE.
                 </h1>
-                <p className="text-priColor text-sm md:text-xl font-light md:font-normal mb-3 font-Sat">
+                <p className="text-priColor text-sm md:text-xl font-light md:font-normal mb-3 font-Clash">
                   Start on : 08:00 GTS . Monday
                 </p>
                 <div className="block md:flex space-x-16">
-                  <p className="text-priColor text-xs md:text-lg font-normal hidden md:block font-Sat">
+                  <p className="text-priColor text-xs md:text-lg font-normal hidden md:block font-Clash">
                     GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
                     <br />
                     INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
@@ -225,13 +131,13 @@ const Features = () => {
                   <div className="mt-10">
                     <a
                       href=""
-                      className="text-priColor mr-10 border-b-2 border-current pb-4 text-xs md:text-lg font-Sat"
+                      className="text-priColor mr-10 border-b-2 border-current pb-4 text-xs md:text-lg font-Clash"
                     >
                       SEE MORE
                     </a>
                     <a
                       href=""
-                      className="remind text-priColor border-solid border border-current rounded-lg p-4 text-xs md:text-lg font-Sat"
+                      className="remind text-priColor border-solid border border-current rounded-lg p-4 text-xs md:text-lg font-Clash"
                     >
                       Set a reminder
                     </a>
@@ -248,24 +154,24 @@ const Features = () => {
           <hr className="mb-10" />
           <div className="you mb-20">
             <div className="flex justify-around items-center">
-              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Sat">
+              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Clash">
                 Explore Marketplace
               </h1>
               <Link
                 to="/marketplace"
-                className="font-Sat font-medium md:text-2xl text-center"
+                className="font-Clash font-medium md:text-2xl text-center"
               >
                 <img src={vec1} alt="" />
               </Link>
             </div>
             <hr />
             <div className="flex justify-around mt-10 items-center">
-              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Sat">
+              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Clash">
                 See auctions
               </h1>
               <Link
                 to="/auctions"
-                className="font-Sat font-medium md:text-2xl text-center"
+                className="font-Clash font-medium md:text-2xl text-center"
               >
                 <img src={vec1} alt="" />
               </Link>
@@ -351,16 +257,16 @@ const Features = () => {
             </div>
             <div className="hidden md:block">
               <ul className="">
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Home</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Marketplace</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Auctions</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href=""></a>Drop
                 </li>
               </ul>
@@ -368,16 +274,16 @@ const Features = () => {
 
             <div className="hidden md:block">
               <ul>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Blog</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Wallets</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Rates</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Sat">
+                <li className="text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">High Bid</a>
                 </li>
               </ul>
@@ -385,12 +291,12 @@ const Features = () => {
 
             <div>
               <ul>
-                <li className="flex items-center font-normal text-2xl space-x-6 mb-6 font-Sat">
+                <li className="flex items-center font-normal text-2xl space-x-6 mb-6 font-Clash">
                   <img src={foot1} alt="" className="mr-6" />
                   artsystudios@gmail.com
                 </li>
 
-                <li className="flex items-center font-normal text-2xl space-x-6 font-Sat">
+                <li className="flex items-center font-normal text-2xl space-x-6 font-Clash">
                   <img src={foot0} alt="" className="mr-6" />
                   Lagos, Nigeria
                 </li>

@@ -338,10 +338,3 @@ input {
     position: absolute;
   }
 }
-
-@media (max-width: 600px) {
-  .hero__title {
-    font-size: 3rem;
-    line-height: 125%;
-  }
-}

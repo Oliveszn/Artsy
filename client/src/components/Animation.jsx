@@ -17,7 +17,7 @@ const Animation = () => {
     <>
       {location.pathname === "/" && (
         <section className="mt-20">
-          <div className="md:h-[505px] tb:h-[350px] sm:hidden md:flex justify-center items-center oveflow-hidden gap-4">
+          <div className="md:h-[505px] tb:h-[350px] hidden md:flex justify-center items-center oveflow-hidden gap-4">
             <div className="md:h-[332px] w-[24.5%] contain border-black">
               <div className="wrapperfour w-full h-full flex gap-4">
                 <img src={img0} alt="glass" className="object-contain" />
@@ -59,7 +59,7 @@ const Animation = () => {
             </div>
           </div>
 
-          <div className="md:hidden sm:h-[356px] w-[95%] mt-3 mb-20 relative mobile-hero bg-{red} flex items-center justify-center ">
+          <div className="md:hidden h-[356px] w-[95%] mt-3 mb-20 relative mobile-hero bg-{red} flex items-center justify-center ">
             <div className="absolute left-0 bottom-6">
               <img src={orange} alt="back-image" />
             </div>

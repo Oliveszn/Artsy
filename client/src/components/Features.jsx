@@ -107,16 +107,16 @@ const Features = () => {
       {location.pathname === "/" && (
         <section className="auct mt-20">
           <div className="container mx-auto py-10">
-            <h1 className="md:font-medium md:text-4xl text-priColor mb-9 hidden md:block font-Clash">
+            <h1 className="md:font-medium text-3xl md:text-4xl text-priColor mb-9 hidden md:block font-Clash">
               See Upcoming Auctions and Exhibitions
             </h1>
             <div className="relative box-border">
               <img src={img91} alt="" className="" />
               <div className="absolute top-8 md:top-40 left-24">
-                <h1 className="text-priColor text-xl md:text-3xl font-normal md:font-normal mb-3 font-Clash">
+                <h1 className="text-priColor text-2xl md:text-3xl font-normal md:font-normal mb-3 font-Clash">
                   MONALISA REDEFINED IN STYLE.
                 </h1>
-                <p className="text-priColor text-sm md:text-xl font-light md:font-normal mb-3 font-Clash">
+                <p className="text-priColor text-lg md:text-xl font-light md:font-normal mb-3 font-Clash">
                   Start on : 08:00 GTS . Monday
                 </p>
                 <div className="block md:flex space-x-16">
@@ -154,24 +154,24 @@ const Features = () => {
           <hr className="mb-10" />
           <div className="you mb-20">
             <div className="flex justify-around items-center">
-              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Clash">
+              <h1 className="text-textColorAlt font-normal md:font-medium text-2xl md:text-3xl lg:text-5xl font-Clash">
                 Explore Marketplace
               </h1>
               <Link
                 to="/marketplace"
-                className="font-Clash font-medium md:text-2xl text-center"
+                className="font-Clash font-normal md:font-medium md:text-2xl text-center"
               >
                 <img src={vec1} alt="" />
               </Link>
             </div>
             <hr />
             <div className="flex justify-around mt-10 items-center">
-              <h1 className="text-textColorAlt font-medium text-2xl md:text-5xl font-Clash">
+              <h1 className="text-textColorAlt font-normal md:font-medium text-2xl md:text-5xl font-Clash">
                 See auctions
               </h1>
               <Link
                 to="/auctions"
-                className="font-Clash font-medium md:text-2xl text-center"
+                className="font-Clash font-normal md:font-medium md:text-2xl text-center"
               >
                 <img src={vec1} alt="" />
               </Link>

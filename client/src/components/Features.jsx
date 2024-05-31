@@ -152,21 +152,21 @@ const Features = () => {
       {location.pathname === "/" && (
         <section className="mt-20">
           <hr className="mb-10" />
-          <div className="you mb-20">
+          <div className="mb-20">
             <div className="flex justify-around items-center">
               <h1 className="text-textColorAlt font-normal md:font-medium text-2xl md:text-3xl lg:text-5xl font-Clash">
                 Explore Marketplace
               </h1>
               <Link
                 to="/marketplace"
-                className="font-Clash font-normal md:font-medium md:text-2xl text-center"
+                className="font-Clash font-normal md:font-medium text-xl md:text-2xl text-center"
               >
                 <img src={vec1} alt="" />
               </Link>
             </div>
             <hr />
             <div className="flex justify-around mt-10 items-center">
-              <h1 className="text-textColorAlt font-normal md:font-medium text-2xl md:text-5xl font-Clash">
+              <h1 className="text-textColorAlt font-normal md:font-medium text-2xl md:text-3xl lg:text-5xl font-Clash">
                 See auctions
               </h1>
               <Link
@@ -185,7 +185,7 @@ const Features = () => {
         <section className="">
           <div className="top__creators p-5 md:py-10 md:px-20 mb-20">
             <div className="flex justify-between mb-14">
-              <h1 className="text-2xl md:text-5xl font-semibold font-Clash">
+              <h1 className="text-2xl mdtext-3xl lg:text-5xl font-medium md:font-semibold font-Clash">
                 TOP CREATORS OF <br />
                 THE WEEK
               </h1>
@@ -197,16 +197,16 @@ const Features = () => {
 
                 <div className="">
                   <ul className="flex justify-between md:block">
-                    <li className="text-sm md:text-4xl font-normal mr-2 md:mr-0 font-Clash">
+                    <li className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-light md:font-normal mr-2 md:mr-0 font-Clash">
                       Editorials
                     </li>
-                    <li className="text-sm md:text-4xl font-normal mr-2 md:mr-0 font-Clash">
+                    <li className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-light md:font-normal mr-2 md:mr-0 font-Clash">
                       Fashion
                     </li>
-                    <li className="text-sm md:text-4xl font-normal mr-2 md:mr-0 font-Clash">
+                    <li className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-light md:font-normal mr-2 md:mr-0 font-Clash">
                       Lifestyle
                     </li>
-                    <li className="text-sm md:text-4xl font-normal mr-2 md:mr-0 font-Clash">
+                    <li className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-light md:font-normal mr-2 md:mr-0 font-Clash">
                       Blueprint
                     </li>
                   </ul>
@@ -214,7 +214,7 @@ const Features = () => {
               </div>
             </div>
 
-            <p className="creators-subtitle md:text-3xl font-extralight leading-10 font-Clash">
+            <p className="creators-subtitle text-xl md:text-2xl lg:text-3xl font-extralight leading-10 font-Clash">
               “Everything always looked better in black and white. Everything
               always as if it were the first time; there's always more people in
               a black and white photograph. It just makes it seem that there
@@ -224,10 +224,10 @@ const Features = () => {
             </p>
           </div>
           <div className="border-solid border border-gray-800 mx-auto container w-10/12 py-14 flex flex-col md:block md:text-center">
-            <h1 className="text-3xl font-normal text-textColorAlt mb-10 uppercase font-Stix">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-normal text-textColorAlt mb-10 uppercase font-Stix">
               NewsLetter
             </h1>
-            <p className="font-normal text-3xl text-textColorAlt mb-10 font-Stix">
+            <p className="font-normal text-xl md:text-2xl lg:text-3xl text-textColorAlt mb-10 font-Stix">
               Subscribe to get daily updates on new drops & exciting deals
             </p>
             <div className="you md:flex md:justify-center md:items-center">
@@ -253,7 +253,9 @@ const Features = () => {
               <h1 className="font-light text-xl font-Stix">REACH US</h1>
             </div>
             <div className="hidden md:block">
-              <h1 className="font-semibold text-5xl font-Stix">ARTSY.</h1>
+              <h1 className="font-semibold text-xl md:text-3xl lg:text-5xl font-Stix">
+                ARTSY.
+              </h1>
             </div>
             <div className="hidden md:block">
               <ul className="">

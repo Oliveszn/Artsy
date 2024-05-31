@@ -259,16 +259,16 @@ const Features = () => {
             </div>
             <div className="hidden md:block">
               <ul className="">
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Home</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Marketplace</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Auctions</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href=""></a>Drop
                 </li>
               </ul>
@@ -276,16 +276,16 @@ const Features = () => {
 
             <div className="hidden md:block">
               <ul>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Blog</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Wallets</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">Rates</a>
                 </li>
-                <li className="text-2xl font-normal text-textColorAlt font-Clash">
+                <li className="text-xl md:text-2xl font-normal text-textColorAlt font-Clash">
                   <a href="">High Bid</a>
                 </li>
               </ul>
@@ -293,12 +293,12 @@ const Features = () => {
 
             <div>
               <ul>
-                <li className="flex items-center font-normal text-2xl space-x-6 mb-6 font-Clash">
+                <li className="flex items-center font-normal text-xl md:text-2xl space-x-6 mb-6 font-Clash">
                   <img src={foot1} alt="" className="mr-6" />
                   artsystudios@gmail.com
                 </li>
 
-                <li className="flex items-center font-normal text-2xl space-x-6 font-Clash">
+                <li className="flex items-center font-normal text-xl md:text-2xl space-x-6 font-Clash">
                   <img src={foot0} alt="" className="mr-6" />
                   Lagos, Nigeria
                 </li>

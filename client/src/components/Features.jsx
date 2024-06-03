@@ -1,7 +1,4 @@
 import vector1 from "../images/Vector.svg";
-import img9 from "../images/Rectangle 299.png";
-import img10 from "../images/Rectangle 299 (1).png";
-import img11 from "../images/Rectangle 299 (2).png";
 import img14 from "../images/Ellipse 14.png";
 import img15 from "../images/Ellipse 15.png";
 import img16 from "../images/Ellipse 16.png";
@@ -250,10 +247,12 @@ const Features = () => {
         <footer className="container mx-auto mt-24">
           <div className="flex flex-col md:flex-row justify-around items-start md:items-center">
             <div className="block md:hidden mb-10">
-              <h1 className="font-light text-xl font-Stix">REACH US</h1>
+              <h1 className="font-light text-lg md:text-xl font-Stix">
+                REACH US
+              </h1>
             </div>
             <div className="hidden md:block">
-              <h1 className="font-semibold text-xl md:text-3xl lg:text-5xl font-Stix">
+              <h1 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl font-Stix">
                 ARTSY.
               </h1>
             </div>

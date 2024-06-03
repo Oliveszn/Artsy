@@ -8,14 +8,14 @@ const Drop = () => {
     <>
       <div className="mx-auto container">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="mb-3 text-3xl md:text-4xl font-Sat font-bold md:font-medium text-secColor">
+          <h1 className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-Sat font-bold md:font-medium text-secColor">
             Upcoming drops
           </h1>
-          <p className="mb-3 text-lg md:text-2xl font-Sat font-normal text-center">
+          <p className="mb-3 text-lg md:text-xl lg:text-2xl font-Sat font-normal text-center">
             Turn on notifications so that <br className="block md:hidden" />
             no drops will miss you
           </p>
-          <button className="text-textColorAlt border-solid border border-current rounded-lg py-3 px-16 font-Sat text-xl md:text-3xl font-medium">
+          <button className="text-textColorAlt border-solid border border-current rounded-lg py-3 px-16 font-Sat text-xl md:text-2xl lg:text-3xl font-medium">
             Notify me
           </button>
         </div>

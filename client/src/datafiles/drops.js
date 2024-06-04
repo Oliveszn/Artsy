@@ -10,6 +10,7 @@ export const drops = [
     condition: "Time remaining",
     status: "UPCOMING",
     btn: "Join",
+    action: "Get Notified",
     image: "images/Rectangle 82.png",
   },
   {
@@ -23,6 +24,7 @@ export const drops = [
     condition: "Time remaining",
     status: "LIVE NOW",
     btn: "Join",
+    action: "Join Now",
     image: "images/Rectangle 84.png",
   },
   {
@@ -36,6 +38,7 @@ export const drops = [
     condition: "Auction Ended",
     status: "ENDED",
     btn: "View",
+    action: "View",
     image: "images/Rectangle 87.png",
   },
   {
@@ -49,6 +52,7 @@ export const drops = [
     condition: "Auction Ended",
     status: "ENDED",
     btn: "View",
+    action: "View",
     image: "images/Rectangle 2332.png",
   },
 ];

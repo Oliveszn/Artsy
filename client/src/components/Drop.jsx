@@ -2,6 +2,7 @@ import rec82 from "../images/Rectangle 82.png";
 import rec84 from "../images/Rectangle 84.png";
 import rec87 from "../images/Rectangle 87.png";
 import rec23 from "../images/Rectangle 2332.png";
+import { drops } from "../datafiles/drops";
 
 const Drop = () => {
   return (
@@ -22,7 +23,60 @@ const Drop = () => {
       </div>
 
       <section className="mx-auto container mt-20">
-        <div className="flex flex-col md:flex-row gap-x-7 gap-y-7">
+        {drops.map((drops) => (
+          <div
+            className="flex flex-col md:flex-row gap-x-7 gap-y-7"
+            key={drops.id}
+          >
+            <div className="relative">
+              <img src={drops.image} className="hover:cursor-pointer" alt="" />
+              <div className="image__time">
+                <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10 w-2/3">
+                  <div className="flex flex-col items-start">
+                    <div>
+                      <h1 className="time">{drops.condition}</h1>
+                    </div>
+                    <div className="flex">
+                      <h1 className="time__num">{drops.timeNum}</h1>
+                      <button className="bg-btnColorAlt join">
+                        {drops.btn}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ehen flex flex-col items-end top-5 right-8 absolute md:hidden">
+                  <button className="bg-btnColorTet update">
+                    {drops.status}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:w-1/2">
+              <button className="update__sec bg-btnColorTet">
+                {drops.status}
+              </button>
+              <p className="time__day">{drops.timeDay}</p>
+              <h1 className="title">{drops.title}</h1>
+              <p className="subtitle">{drops.subtitle}</p>
+              <p className="creator">
+                Creator:{" "}
+                <a href="#" className="text-linkColor">
+                  {drops.creator}
+                </a>
+              </p>
+
+              <a
+                href=""
+                className="font-normal text-base md:text-xl text-linkColor font-Sat"
+              >
+                {drops.action}
+              </a>
+            </div>
+          </div>
+        ))}
+        {/* <div className="flex flex-col md:flex-row gap-x-7 gap-y-7">
           <div className="relative">
             <img src={rec82} className="hover:cursor-pointer" alt="" />
             <div className="image__time">
@@ -205,7 +259,7 @@ const Drop = () => {
               View
             </a>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <div className="hidden md:flex items-center justify-center my-20">

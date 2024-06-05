@@ -11,43 +11,6 @@
   @apply font-medium md:font-bold md:text-2xl text-base text-textColorAlt font-Sat;
 }
 
-/*****DROPS*********/
-.time {
-  @apply md:text-2xl text-base font-normal font-Sat;
-}
-
-.time__num {
-  @apply text-xl font-normal md:text-2xl md:mr-20 font-Stix;
-}
-
-.join {
-  @apply text-priColor py-1 px-6 rounded-xl text-xl font-Sat hidden md:block;
-}
-
-.update {
-  @apply mb-4 text-priColor py-1 px-4 rounded-md font-Sat font-medium text-xs;
-}
-
-.update__sec {
-  @apply hidden md:block mb-4 text-priColor py-1 px-8 rounded-lg font-Sat text-lg font-medium;
-}
-
-.time__day {
-  @apply mb-4 md:text-xl text-base font-normal text-secColor font-Sat;
-}
-
-.title {
-  @apply mb-4 md:text-4xl text-2xl font-medium text-secColor font-Sat;
-}
-
-.subtitle {
-  @apply md:w-2/3 mb-4 font-normal text-lg md:text-xl text-tetColor font-Sat;
-}
-
-.creator {
-  @apply mb-4 text-xl md:text-2xl font-medium text-secColor font-Sat;
-}
-
 * {
   padding: 0;
   margin: 0;

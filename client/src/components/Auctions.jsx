@@ -19,7 +19,7 @@ const Auctions = () => {
             <img src={rec24} alt="" className="rubb" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
-                <h1 className="text-xl md:text-4xl font-normal font-Stix">
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
                   2hr: 4mins: 5s
                 </h1>
               </div>
@@ -29,7 +29,7 @@ const Auctions = () => {
             <img src={rec245} alt="" className="rubb" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
-                <h1 className="text-xl md:text-4xl font-normal font-Stix">
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
                   6hr: 40mins: 15s
                 </h1>
               </div>
@@ -39,7 +39,7 @@ const Auctions = () => {
             <img src={rec246} alt="" className="rubb" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
-                <h1 className="text-xl md:text-4xl font-normal font-Stix">
+                <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
                   8hr: 20mins: 50s
                 </h1>
               </div>
@@ -49,7 +49,7 @@ const Auctions = () => {
       </section>
 
       <section className="mt-20 mx-auto container">
-        <h2 className="md:font-bold font-medium text-2xl md:text-4xl mb-10 font-Sat">
+        <h2 className="md:font-bold font-medium text-2xl md:text-3xl lg:text-4xl mb-10 font-Sat">
           Top bids from popular creators
         </h2>
 
@@ -66,7 +66,7 @@ const Auctions = () => {
               <img src={rec57} alt="" className="mb-4" />
             </div>
             <div>
-              <p className="text-xl font-bold mb-3 font-Sat md:text-4xl">
+              <p className="text-xl font-bold mb-3 font-Sat md:text-2xl lg:text-4xl">
                 Out of the box
               </p>
             </div>
@@ -84,9 +84,9 @@ const Auctions = () => {
                   12/08/22
                 </span>
               </p>
-              <p className="text-2xl font-medium font-Sat text-tetColor mt-4">
+              <p className="text-xl md:text-2xl font-medium font-Sat text-tetColor mt-4">
                 Highest bid :
-                <span className="text-2xl font-bold font-Sat text-textColorAlt">
+                <span className="text-xl md:text-2xl font-bold font-Sat text-textColorAlt">
                   0.57 ETH
                 </span>
               </p>
@@ -120,7 +120,7 @@ const Auctions = () => {
               <img src={rec58} alt="" className="mb-4" />
             </div>
             <div>
-              <p className="text-xl font-bold mb-3 font-Sat md:text-4xl">
+              <p className="text-xl font-bold mb-3 font-Sat md:text-2xl lg:text-4xl">
                 Falling apart
               </p>
             </div>
@@ -138,9 +138,9 @@ const Auctions = () => {
                   12/08/22
                 </span>
               </p>
-              <p className="text-2xl font-medium font-Sat text-tetColor mt-4">
+              <p className="text-xl md:text-2xl font-medium font-Sat text-tetColor mt-4">
                 Highest bid :
-                <span className="text-2xl font-bold font-Sat text-textColorAlt">
+                <span className="text-xl md:text-2xl font-bold font-Sat text-textColorAlt">
                   0.34 ETH
                 </span>
               </p>

@@ -45,11 +45,15 @@ const Drop = () => {
       <section className="mx-auto container mt-20">
         {drops.map((drops) => (
           <div
-            className="flex flex-col md:flex-row gap-x-7 gap-y-7 mb-10"
+            className="flex flex-col lg:flex-row gap-x-7 gap-y-7 mb-10"
             key={drops.id}
           >
             <div className="relative">
-              <img src={drops.image} className="hover:cursor-pointer" alt="" />
+              <img
+                src={drops.image}
+                className="hover:cursor-pointer w-full h-auto"
+                alt=""
+              />
               <div className="image__time">
                 <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10 w-2/3">
                   <div className="flex flex-col items-start">
@@ -83,7 +87,7 @@ const Drop = () => {
               </div>
             </div>
 
-            <div className="md:w-1/2">
+            <div className="lg:w-1/2">
               <button
                 style={getStatusStyle(drops.status)}
                 className="hidden md:block mb-4 text-priColor py-1 px-8 rounded-lg font-Sat text-lg font-medium"
@@ -96,11 +100,11 @@ const Drop = () => {
               <h1 className="mb-4 md:text-4xl text-2xl font-medium text-secColor font-Sat">
                 {drops.title}
               </h1>
-              <p className="md:w-2/3 mb-4 font-normal text-lg md:text-xl text-tetColor font-Sat">
+              <p className="lg:w-2/3 mb-4 font-normal text-lg md:text-xl text-tetColor font-Sat">
                 {drops.subtitle}
               </p>
               <p className="mb-4 text-xl md:text-2xl font-medium text-secColor font-Sat">
-                Creator:{" "}
+                Creator:
                 <a href="#" className="text-linkColor">
                   {drops.creator}
                 </a>

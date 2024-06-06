@@ -1,13 +1,11 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Drop from "./components/Drop";
-import Marketplace from "./components/Marketplace";
-import Auctions from "./components/Auctions";
+import Home from "./pages/Home";
+import Drop from "./pages/Drop";
+import Marketplace from "./pages/Marketplace";
+import Auctions from "./pages/Auctions";
 import { Route, Routes } from "react-router-dom";
 import Animation from "./components/Animation";
-import Features from "./components/Features";
+import Features from "./pages/Features";
 import Cart from "./components/Cart";
 import { ShopContextProvider } from "./context/shop-context";
 

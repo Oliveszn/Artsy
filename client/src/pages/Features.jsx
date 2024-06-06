@@ -27,18 +27,18 @@ const Features = () => {
           <div className="feature__container px-1">
             {featuredproducts.map((item, index) => (
               <div
-                className={`feature__wrapper flex flex-col gap-x-7 md:flex-row mt-10 ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
+                className={`feature__wrapper flex flex-col gap-x-7 lg:flex-row mt-10 ${
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
                 key={item.id}
               >
-                <div className="feature__img--holder">
+                <div className="relative">
                   <img
                     src={item.image}
                     className="feature__img hover:cursor-pointer"
                     alt=""
                   />
-                  <div className="image__overlay image__overlay--blur hidden md:flex">
+                  <div className="image__overlay image__overlay--blur">
                     <div className="flex items-center">
                       <h1 className="text-3xl font-medium font-Clash">
                         View Products
@@ -49,14 +49,14 @@ const Features = () => {
                     </div>
                   </div>
                   <div className="absolute w-full h-full top-0 left-0 flex-col items-center justify-center flex md:hidden">
-                    <h1 className="feature__title font-bold text-4xl text-priColor mb-3 font-Clash">
+                    <h1 className="leading-[50px] font-bold text-4xl text-priColor mb-3 font-Clash">
                       {item.title}
                     </h1>
                   </div>
                 </div>
 
-                <div className="md:w-1/2">
-                  <h1 className="feature__title font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
+                <div className="lg:w-1/2">
+                  <h1 className="leading-[50px] font-semibold md:font-medium text-3xl md:text-4xl text-textColorAlt mb-3 hidden md:block font-Clash">
                     {item.title}
                   </h1>
                   <p className="feature__subtitle w-11/12 font-normal text-base md:text-2xl text-textColorAlt mb-16 font-Clash">
@@ -107,17 +107,17 @@ const Features = () => {
             <h1 className="md:font-medium text-3xl md:text-4xl text-priColor mb-9 hidden md:block font-Clash">
               See Upcoming Auctions and Exhibitions
             </h1>
-            <div className="relative box-border">
-              <img src={img91} alt="" className="" />
-              <div className="absolute top-8 md:top-40 left-24">
+            <div className="relative">
+              <img src={img91} alt="" className="w-full h-auto" />
+              <div className="absolute top-8 md:top-20 left-10">
                 <h1 className="text-priColor text-2xl md:text-3xl font-normal md:font-normal mb-3 font-Clash">
                   MONALISA REDEFINED IN STYLE.
                 </h1>
                 <p className="text-priColor text-lg md:text-xl font-light md:font-normal mb-3 font-Clash">
                   Start on : 08:00 GTS . Monday
                 </p>
-                <div className="block md:flex space-x-16">
-                  <p className="text-priColor text-xs md:text-lg font-normal hidden md:block font-Clash">
+                <div className="block xl:flex md:space-x-16">
+                  <p className="text-priColor text-xs md:text-lg font-normal hidden lg:block font-Clash">
                     GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
                     <br />
                     INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
@@ -134,7 +134,7 @@ const Features = () => {
                     </a>
                     <a
                       href=""
-                      className="remind text-priColor border-solid border border-current rounded-lg p-4 text-xs md:text-lg font-Clash"
+                      className="text-priColor border-solid border border-current rounded-lg p-4 text-xs md:text-lg font-Clash"
                     >
                       Set a reminder
                     </a>

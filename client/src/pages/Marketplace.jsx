@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PRODUCTS } from "../products";
-import Product from "./Product";
+import Product from "../components/Product";
 
 const Marketplace = ({}) => {
   const [search, setSearch] = useState("");

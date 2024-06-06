@@ -151,10 +151,6 @@ hr {
   background-repeat: no-repeat;
 }
 
-.feature__title {
-  line-height: 50px;
-}
-
 .circle {
   width: 50px;
   height: 50px;
@@ -189,10 +185,6 @@ input {
 
 .creators-subtitle {
   color: rgba(0, 0, 0, 0.57);
-}
-
-.feature__img--holder {
-  position: relative;
 }
 
 .image__overlay {

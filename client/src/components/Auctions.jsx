@@ -7,7 +7,7 @@ import vec from "../images/Vector-likes.png";
 
 const Auctions = () => {
   return (
-    <>
+    <div className="px-4">
       <section>
         <div className="mx-auto container">
           <h2 className="text-secColor md:text-2xl text-xl font-medium font-medium font-Sat">
@@ -16,7 +16,7 @@ const Auctions = () => {
         </div>
         <div className="flex justify-between flex-col md:flex-row">
           <div className="relative">
-            <img src={rec24} alt="" className="rubb" />
+            <img src={rec24} alt="" className="" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
@@ -26,7 +26,7 @@ const Auctions = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={rec245} alt="" className="rubb" />
+            <img src={rec245} alt="" className="" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
@@ -36,7 +36,7 @@ const Auctions = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={rec246} alt="" className="rubb" />
+            <img src={rec246} alt="" className="" />
             <div className="image__time">
               <div className="flex items-center time__holder py-2 px-6 rounded-lg mb-10">
                 <h1 className="text-xl md:text-2xl lg:text-4xl font-normal font-Stix">
@@ -162,7 +162,7 @@ const Auctions = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 import Animation from "./components/Animation";
 import Features from "./components/Features";
 import Cart from "./components/Cart";
-import { useLocation } from "react-router-dom";
 import { ShopContextProvider } from "./context/shop-context";
 
 const isHomePage = location.pathname === "/marketplace";

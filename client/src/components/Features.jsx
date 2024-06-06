@@ -16,7 +16,7 @@ const Features = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="px-4">
       {location.pathname === "/" && (
         <section className="container mt-24 mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold md:font-medium leading-10 mb-10 font-Clash">
@@ -220,7 +220,7 @@ const Features = () => {
               Lowden
             </p>
           </div>
-          <div className="border-solid border border-gray-800 mx-auto container w-10/12 py-14 flex flex-col md:block md:text-center">
+          <div className="border-solid border border-gray-800 mx-auto container w-10/12 py-14 flex flex-col md:block md:text-center px-4">
             <h1 className="text-xl md:text-2xl lg:text-3xl font-normal text-textColorAlt mb-10 uppercase font-Stix">
               NewsLetter
             </h1>
@@ -310,7 +310,7 @@ const Features = () => {
           </p>
         </footer>
       )}
-    </>
+    </div>
   );
 };
 

@@ -24,14 +24,20 @@ const CartItems = (props) => {
             <p className="font-extralight font-Sat text-base mb-2">
               Size: {size}
             </p>
-            <div className="flex flex-row items-center ">
-              <button onClick={() => removeFromCart(id)}>
-                <ion-icon name="remove-outline" size="large"></ion-icon>
+            <div className="flex items-center">
+              <button
+                onClick={() => removeFromCart(id)}
+                className="w-10 h-10 flex items-center justify-center"
+              >
+                <span className="text-2xl">-</span>
               </button>
 
               <span className="text-2xl">{cartItems[id]}</span>
-              <button onClick={() => addToCart(id)}>
-                <ion-icon name="add-outline" size="large"></ion-icon>
+              <button
+                onClick={() => addToCart(id)}
+                className="w-10 h-10 flex items-center justify-center"
+              >
+                <span className="text-2xl">+</span>
               </button>
             </div>
           </div>

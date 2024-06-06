@@ -13,7 +13,7 @@ const Cart = () => {
   console.log(combinedAmount);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-4">
       {PRODUCTS.map((product) => {
         if (cartItems[product.id] !== 0) {
           return <CartItems data={product} key={product.id} />;
